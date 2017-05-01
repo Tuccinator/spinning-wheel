@@ -1,0 +1,35 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#wheel {
+    height: 100px;
+    width: 500px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#wheel-inner {
+    position: absolute;
+    width: 3000px;
+}
+
+.wheel-item {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+#wheel-needle {
+    position: absolute;
+    width: 3px;
+    height: 100px;
+    left: 50%;
+    right: 50%;
+    background-color: red;
+}

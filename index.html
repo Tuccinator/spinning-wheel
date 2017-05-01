@@ -1,0 +1,23 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spinning Wheel Example</title>
+    <link rel="stylesheet" href="lib/wheel.css">
+</head>
+<body>
+    <div id="wheel"></div>
+
+    <script src="//cdn.jsdelivr.net/velocity/1.5/velocity.min.js"></script>
+    <script src="lib/wheel.js"></script>
+
+    <script>
+        // initialize wheel with options
+        Wheel.init('wheel', { duration: 3000 });
+
+        // spin wheel
+        Wheel.spin();
+    </script>
+</body>
+</html>
