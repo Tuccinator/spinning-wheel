@@ -1,28 +1,48 @@
 html, body {
     margin: 0;
     padding: 0;
+    min-height: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #wheel {
     height: 100px;
-    width: 500px;
+    width: 1000px;
     position: relative;
     margin: 0 auto;
     overflow: hidden;
+    border: 1px solid blue;
 }
 
 #wheel-inner {
     position: absolute;
-    width: 3000px;
 }
 
 .wheel-item {
     height: 100px;
     width: 100px;
-    border: 1px solid black;
+    border-left: 1px solid black;
     box-sizing: border-box;
     display: inline-block;
     white-space: nowrap;
+}
+
+.wheel-item:nth-child(odd) {
+    background-color: blue;
+}
+
+.wheel-item:nth-child(even) {
+    background-color: black;
+}
+
+.wheel-item:nth-child(28) {
+    background-color: white;
 }
 
 #wheel-needle {
