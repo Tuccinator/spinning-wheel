@@ -9,5 +9,5 @@ This simple spinning wheel is useful for creating case opening animations like C
 - [x] Ability to include an array of items to be used
 - [x] Respin wheel
 - [ ] Change names of variables
-- [ ] Prepare the wheel before spinning
-- [ ] Allow for multiple wheels
+- [x] Prepare the wheel before spinning
+- [x] Allow for multiple wheels

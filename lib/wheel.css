@@ -12,7 +12,12 @@ body {
     flex-direction: column;
 }
 
-#wheel {
+#wheel-container {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.wheel {
     height: 200px;
     width: 640px;
     position: relative;
@@ -21,11 +26,7 @@ body {
     border: 1px solid blue;
 }
 
-#wheel-inner {
-    position: absolute;
-}
-
-#wheel-inner2 {
+.wheel-inner {
     position: absolute;
 }
 
@@ -44,7 +45,7 @@ body {
     width: 100%;
 }
 
-#wheel-needle {
+.wheel-needle {
     position: absolute;
     width: 3px;
     height: 200px;
