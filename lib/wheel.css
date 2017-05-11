@@ -9,11 +9,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 #wheel {
     height: 200px;
-    width: 800px;
+    width: 640px;
     position: relative;
     margin: 0 auto;
     overflow: hidden;
@@ -24,25 +25,23 @@ body {
     position: absolute;
 }
 
+#wheel-inner2 {
+    position: absolute;
+}
+
 .wheel-item {
     height: 200px;
     width: 200px;
     border-left: 1px solid black;
     box-sizing: border-box;
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     white-space: nowrap;
 }
 
-.wheel-item:nth-child(odd) {
-    background-color: blue;
-}
-
-.wheel-item:nth-child(even) {
-    background-color: black;
-}
-
-.wheel-item:nth-child(28) {
-    background-color: white;
+.wheel-item img {
+    width: 100%;
 }
 
 #wheel-needle {
@@ -52,4 +51,17 @@ body {
     left: 50%;
     right: 50%;
     background-color: red;
+}
+
+.spin-button {
+    margin-top: 10px;
+    display: block;
+    width: 200px;
+    height: 100px;
+    background-color: #27ae60;
+    border: none;
+    font-size: 2.5rem;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
 }

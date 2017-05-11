@@ -9,15 +9,43 @@
 <body>
     <div id="wheel"></div>
 
+    <button class="spin-button" onclick="spinWheel();">Spin</button>
+
     <script src="lib/velocity.min.js"></script>
     <script src="lib/wheel.js"></script>
 
     <script>
+
+        var items = [
+            {
+                id: 1,
+                image: 'http://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot621FBRw7P7NYjV9-N24q4yCkP_gfeiHxjNS6sBz0-vDpNqmilKw-RE5MDv3cdTGIVM8ZF_WqFjtkOnn0Z-i_MOe5x-cbmw'
+            },
+            {
+                id: 2,
+                image: 'http://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhjxszJemkV09-5gZKKkPLLMrfFqWdY781lxLuW8Njw31Dn8xc_YTqmJ4DDJFM2ZwqE_ATtx-u7g8C5vpjOzHM263E8pSGKJ1XuG9M'
+            },
+            {
+                id: 3,
+                image: 'http://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopujwezhjxszYI2gS092lnYmGmOHLPr7Vn35cpsB0j7qZoNn32QW2-xJoYGHzd9SWdwQ5ZgvYrFO9kOrn08XouJ_KyCR9-n51cFMXX4s'
+            },
+            {
+                id: 4,
+                image: 'http://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhoyszJemkV4N27q4KcqPv9NLPF2GgEuJFyi-uTotT03A3h_hZlYWv2IdPAcAY8Y1vU-gPrw7rvjJ6-7ZnXiSw034A6uhk'
+            }
+        ];
+
+        items = items.map(function(item) {
+            return '<img src="' + item.image + '" />';
+        });
+
         // initialize wheel with options
-        Wheel.init('wheel', { duration: 6000, width: 200 });
+        Wheel.init('wheel', { duration: 6000, width: 200, items: items });
 
         // spin wheel
-        Wheel.spin();
+        function spinWheel() {
+            Wheel.spin();
+        }
     </script>
 </body>
 </html>

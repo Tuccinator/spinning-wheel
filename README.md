@@ -6,5 +6,8 @@ This simple spinning wheel is useful for creating case opening animations like C
 - [x] Create a centered wheel at the end of animation
 - [x] Accurately go-to final item with any wheel width (responsively)
 - [x] Randomize the end result more instead of directly in the center
-- [ ] Ability to include an array of items to be used
-- [ ] Image tag in the HTML if there is a relevant image in the array object
+- [x] Ability to include an array of items to be used
+- [x] Respin wheel
+- [ ] Change names of variables
+- [ ] Prepare the wheel before spinning
+- [ ] Allow for multiple wheels
