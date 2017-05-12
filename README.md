@@ -1,6 +1,6 @@
 # Spinning Wheel
 
-This simple spinning wheel is useful for creating case opening animations like CS:GO, Call of Duty, etc. It runs on vanilla JavaScript with the [Velocity](https://github.com/julianshapiro/velocity) library.
+This simple spinning wheel is useful for creating case opening animations like CS:GO, prize wheels, etc. It runs on vanilla JavaScript with the [Velocity](https://github.com/julianshapiro/velocity) library.
 
 - [x] Create a centered wheel at the beginning
 - [x] Create a centered wheel at the end of animation

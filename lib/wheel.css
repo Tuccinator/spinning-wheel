@@ -66,3 +66,16 @@ body {
     text-transform: uppercase;
     cursor: pointer;
 }
+
+.remove-button {
+    margin-top: 10px;
+    display: block;
+    width: 200px;
+    height: 100px;
+    background-color: #c0392b;
+    border: none;
+    font-size: 2.5rem;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
