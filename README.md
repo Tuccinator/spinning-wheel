@@ -11,3 +11,5 @@ This simple spinning wheel is useful for creating case opening animations like C
 - [ ] Change names of variables
 - [x] Prepare the wheel before spinning
 - [x] Allow for multiple wheels
+
+## Instructions coming soon
